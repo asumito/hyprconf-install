@@ -148,9 +148,11 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 <br>
 
-## Keyboard Shortcuts
-
-After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
+> [!IMPORTANT]
+>
+> ## Keyboard Shortcuts
+>
+> After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
 
 ## Contribute.
 
