@@ -1,3 +1,5 @@
+<a id="top"></a>
+
 <h1 align="center">Minimal Hyprland Install Script</h1>
 <h3 align="center">By</h3>
 <h2 align="center">Shell Ninja</h2>
@@ -22,6 +24,13 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
 > [!NOTE]
 > The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+
+<br>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
 <a id="screenshots"></a>
 
@@ -92,6 +101,11 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
 <br>
 
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
 <a id="features"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=FEATURES" width="450"/>
@@ -106,9 +120,15 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
 - Hypridle to handle auto lock and suspend when no action is runnin
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
-  <br>
+
+<br>
 
 <a id="install"></a>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
@@ -171,6 +191,11 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 <a id="keyboards"></a>
 
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD-SHORTCUTS" width="450"/>
 
 > [!IMPORTANT]
@@ -180,6 +205,11 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 <br>
 
 <a id="contrib"></a>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=CONTRIBUTING" width="450"/>
 
