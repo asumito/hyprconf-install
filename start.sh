@@ -121,7 +121,6 @@ else
     declare -A options=(
         ["setup_for_bluetooth"]=""
         ["install_vs_code"]=""
-        ["install_openbangla_keyboard"]=""
         ["install_browser"]=""
         ["have_nvidia"]=""
     )
@@ -273,11 +272,6 @@ fi
 
 
 # ---------------- Scripts with user agreement
-if [[ "$install_openbangla_keyboard" =~ ^[Yy]$ ]]; then
-    "$common_scripts/write_bangla.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-fi
-
-
 if [[ "$install_vs_code" =~ ^[Yy]$ ]]; then
     "$scripts_dir/8-vs_code.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
 fi

@@ -36,9 +36,9 @@ for pkg in "${packages[@]}"; do
                 printf "${cyan}::${end} Successfully installed ${cyan}$pkg${end}...\n"
             fi
         fi
-    elif command -v zypper &>/dev/null; then
+    elif command -v zypper &> /dev/null; then
 
-        if sudo zypper se -i "$pkg" &>/dev/null; then
+        if sudo zypper se -i "$pkg" &> /dev/null; then
             printf "${magenta}[ Skip ]${end} Skipping $pkg, it's already installed...\n"
         else
             printf "${green}=>${end} Installing $pkg...\n"
@@ -51,13 +51,13 @@ for pkg in "${packages[@]}"; do
 done
 
 # only for fedora
-if command -v dnf &>/dev/null; then
+if command -v dnf &> /dev/null; then
 
-    if rpm -q git &>/dev/null; then
+    if rpm -q git &> /dev/null; then
         printf "${magenta}[ Skip ]${end} Skipping git, it's already installed...\n"
     else
         printf "${green}=>${end} Installing git...\n"
-        if sudo dnf install -y git &> /dev/null; then
+        if sudo dnf install -y git; then
             printf "${cyan}::${end} Successfully installed ${cyan}git${end}...\n"
         fi
     fi
@@ -70,11 +70,11 @@ name=Charm
 baseurl=https://repo.charm.sh/yum/
 enabled=1
 gpgcheck=1
-gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo &>/dev/null
+gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo &> /dev/null
 
     sudo yum install --assumeyes gum &> /dev/null
 
-    if command -v gum &>/dev/null; then
+    if command -v gum &> /dev/null; then
         printf "${cyan}::${end} Successfully installed ${cyan}gim${end}...\n"
     fi
 fi

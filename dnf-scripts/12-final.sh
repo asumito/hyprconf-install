@@ -172,7 +172,7 @@ done
 
 # checking if pywal is installed
 if ! command -v wal &> /dev/null; then
-    sudo pip3 install pywal 2>&1 | tee -a "$log" &> /dev/null
+    sudo pip install pywal 2>&1 | tee -a "$log" &> /dev/null
 fi
 
 sleep 1 && clear
