@@ -44,14 +44,38 @@ log="$log_dir/dotfiles-$(date +%d-%m-%y).log"
 mkdir -p "$log_dir"
 touch "$log"
 
-# _______ Testing _______ #
 
-msg act "Clonning the dotfiles repository and setting it to your system..."
+# asking user if he want's to install the stable or rolling release.
+msg ask "Which release would you like to install?"
+msg att "Stable: it will be updated once in a month..."
+msg att "Rolling: it will be updated frequently..."
+choice=$(gum choose \
+    --cursor.foreground "#00FFFF" \
+    --item.foreground "#fff" \
+    --selected.foreground "#00FF00" \
+    "Stable" "Rolling"
+)
+
+case $choice in
+    Stable)
+        version="stable"
+        msg act "Clonning the dotfiles stable repository and setting it to your system..."
+        ;;
+    Rolling)
+        version="main"
+        msg act "Clonning the dotfiles rolling release repository and setting it to your system..."
+        ;;
+esac
+
+sleep 1
+echo
+
+# msg act "Clonning the dotfiles repository and setting it to your system..."
 # Create the cache directory if it doesn't exist
 
 # Clone the repository and log the output
 if [[ ! -d "$parent_dir/.cache/hyprconf" ]]; then
-  git clone --depth=1 https://github.com/shell-ninja/hyprconf.git "$parent_dir/.cache/hyprconf" 2>&1 | tee -a "$log" &> /dev/null
+  git clone --depth=1 --branch="$version" https://github.com/shell-ninja/hyprconf.git "$parent_dir/.cache/hyprconf" 2>&1 | tee -a "$log" &> /dev/null
 fi
 
 sleep 1
@@ -127,5 +151,8 @@ sed -i "s/kb_variant = .*/kb_variant = $variant/g" "$config"
 echo
 
 msg dn "Setting up the keyboard layout was successful.."
+
+touch "$HOME/.config/hypr/.cache/.version"
+echo "$version" >> "$HOME/.config/hypr/.cache/.version"
 
 sleep 1 && clear
