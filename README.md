@@ -106,6 +106,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
 - Hypridle to handle auto lock and suspend when no action is runnin
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
+  <br>
 
 <a id="install"></a>
 
@@ -170,11 +171,13 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 <a id="keyboards"></a>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD SHORTCUTS" width="450"/>
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD-SHORTCUTS" width="450"/>
 
 > [!IMPORTANT]
 >
 > After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
+
+<br>
 
 <a id="contrib"></a>
 
@@ -221,6 +224,8 @@ git push origin your_branch_name
 
 ### Thats all about contributing.
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS TO" width="450"/>
+<br>
+
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS" width="450"/>
 
 I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
