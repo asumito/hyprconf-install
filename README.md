@@ -11,7 +11,9 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 > [!NOTE]
 > The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
 
-## Screenshots
+<br>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=SCREENSHOTS" width="450"/>
 
 <details close>
 <summary>Overall</summary>
@@ -90,7 +92,9 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
 - Hypridle to handle auto lock and suspend when no action is runnin
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
-  <br>
+<hr>
+
+<br>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
