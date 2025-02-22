@@ -23,7 +23,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 > [!NOTE]
 > The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
 
-<a id="#screenshots"></a>
+<a id="screenshots"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=SCREENSHOTS" width="450"/>
 
@@ -92,7 +92,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
 <br>
 
-<a id="#features"></a>
+<a id="features"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=FEATURES" width="450"/>
 
@@ -107,7 +107,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Hypridle to handle auto lock and suspend when no action is runnin
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
 
-<a id="#install"></a>
+<a id="install"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
@@ -133,6 +133,9 @@ bash <(curl -s https://raw.githubusercontent.com/shell-ninja/hyprconf-install/ma
   chmod +x install.sh
   ./install.sh
   ```
+
+> [!TIP]
+> You can follow this part while installing. Here are the prompts that will be askes while installing.
 
 ### Prompts
 
@@ -165,15 +168,15 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 <br>
 
+<a id="keyboards"></a>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD SHORTCUTS" width="450"/>
+
 > [!IMPORTANT]
->
-> <a id="#keyboards"></a>
->
-> ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD SHORTCUTS" width="450"/>
 >
 > After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
 
-<a id="#contrib"></a>
+<a id="contrib"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=CONTRIBUTING" width="450"/>
 
@@ -218,6 +221,6 @@ git push origin your_branch_name
 
 ### Thats all about contributing.
 
-## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS TO" width="450"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS TO" width="450"/>
 
-#### I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
+I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
