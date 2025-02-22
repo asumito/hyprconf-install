@@ -92,7 +92,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
   <br>
 
-## Installation
+<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
 ### Direct Installation
 
