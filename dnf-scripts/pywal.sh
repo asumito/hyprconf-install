@@ -29,14 +29,15 @@ touch "$log"
 
 
 msg act "Installing pywal.."
-sudo pip install pywal 2>&1 | tee -a "$log" &> /dev/null
+sudo pip install pywal 2>&1 | tee -a "$log"
 
 sleep 1
 
-if [ -n "$(command -v wal)" ]; then
+if command -v wal &> /dev/null; then
     msg dn "pywal was installed successfully!"
 else
-    msg err "Couls not install pywal."
+    msg err "Could not install pywal."
+    exit 1
 fi
 
 
