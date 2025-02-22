@@ -1,22 +1,43 @@
+<a id="top"></a>
+
 <h1 align="center">Minimal Hyprland Install Script</h1>
 <h3 align="center">By</h3>
 <h2 align="center">Shell Ninja</h2>
 <br>
 
-<h3>This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out? </h3>
+This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out?
 
-## [ WARNING ]
+<div align="center">
 
-Please note that this script if fully ready now. But for `openSUSE`, there is a little issue in installing `Hypridle` && `xdg-desktop-portal-hyprland` because a little dependency is missing in the repo of this OS. After it's being added, then the script for `openSUSE` will be totally ready.
+<br>
 
-## [ NOTE ]
+<a href="#screenshots"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
+<a href="#install"><kbd> <br> Install <br> </kbd></a>&ensp;&ensp;
+<a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
+<a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
+<a href="https://discord.gg/kUjz4td2"><kbd> <br> Discord <br> </kbd></a>
 
-The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+</div><br><br>
 
-## Screenshots
+> [!WARNING]
+> This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
+
+> [!NOTE]
+> The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+
+<br>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+<a id="screenshots"></a>
+
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=SCREENSHOTS" width="450"/>
 
 <details close>
-<summary>Themes</summary>
+<summary>Overall</summary>
 <p align="center">
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/1.png?raw=true" />
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/2.png?raw=true" /> <br>
@@ -34,6 +55,9 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/menu/4.png?raw=true" />
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/menu/3.png?raw=true" />
+    <br>
+
+   <img aligh="center" width="99%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/clipboard.png?raw=true" />
 </p> <br>
 </details>
 
@@ -60,7 +84,11 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 <details close>
 <summary>Lock Screen</summary>
 <p align="center">
-   <img aligh="center" width="99%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lock.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-1.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-2.png?raw=true" />
+        <br>
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-3.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/selecttheme.png?raw=true" />
 </p>
 </details>
 
@@ -73,65 +101,67 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 
 <br>
 
-## Features
-
-- <h4>Dynamic Wallpaper changing script</h4>
-- <h4>Change colors according to the changed wallpaper (pywal)</h4>
-- <h4>Light and Dark Mode</h4>
-- <h4>Select and Open apps using Rofi app launcher</h4>
-- <h4>Gorgeous looking Waybar styles</h4>
-- <h4>Rofi app launcher styles</h4>
-- <h4>Rofi power menu</h4>
-- <h4>Opening some web pages as single tab (chatGPT, Gemini, Facebook, YouTube, WhatsApp, Photopea)</h4>
-- <h4>Locking with Hyprlock</h4>
-- <h4>Set your user image in Hyprlock ( a script to set your user image )</h4>
-- <h4>Hypridle to handle auto lock and suspend when no action is running </h4>
-- <h4>Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default </h4>
+<div align="right">
   <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
-## Configure for OpenBangla-Keyboard ( to write in bangla )
+<a id="features"></a>
 
-<details close>
-<summary>Configuring OpenBangla-Keyboard</summary>
-<h4>
-If you have OpenBangla-Keyboard installed, then you need to follow some steps to add the keyboard in fcitx5. Just follow the instructions bellow.
-</h4>
-<h4>1) Right click on this keyboard icon in you waybar.</h4>
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=FEATURES" width="450"/>
 
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-1.jpg?raw=true" /> <br>
+- Dynamic Wallpaper changing script
+- Change colors according to the changed wallpaper (pywal)
+- Select and Open apps using Rofi app launcher
+- Gorgeous looking Waybar styles
+- Rofi app launcher styles
+- Rofi power menu
+- Locking with Hyprlock
+- Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
+- Hypridle to handle auto lock and suspend when no action is runnin
+- Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
 
-<h4>2) Search for "openbangla" and select the keyboard</h4>
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-2.jpg?raw=true" /> <br>
-<h4>3) Now add the keyboard by clicking the 'right aero' icon and click on apply.</h4>
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-3.jpg?raw=true" /> <br>
+<br>
 
-<h4>Now you can switch keyboard using "CTRL + Space"</h4> <br>
-</details>
+<a id="install"></a>
 
-## Installation
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
-### Direct Installation
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
-You can now easily install the config directly without cloning the repository. Just copy and paste the command bellow in your terminal and run it. Before that, make sure to install `curl`. Install it using pacman, dnf or zypper.
+> [!NOTE]
+>
+> ### Direct Installation
+>
+> You can now easily install the config directly without cloning the repository. Just copy and paste the command bellow in your terminal and run it. Before that, make sure to install `curl`. Install it using pacman, dnf or zypper.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/shell-ninja/hyprconf-install/main/direct_run.sh)
 ```
 
-### Manusally Installation
+> [!NOTE]
+>
+> ### Manusally Installation
 
-- Clone this repository:
+> - Clone this repository:
 
-  ```
-  git clone --depth=1 https://github.com/shell-ninja/hyprconf-install.git
-  ```
+```
+git clone --depth=1 https://github.com/shell-ninja/hyprconf-install.git
+```
 
-- Now cd into hyprconf-install directory and run this command.:
-  ```
-  cd ~/hyprconf-install
-  chmod +x install.sh
-  ./install.sh
-  ```
+> - Now cd into hyprconf-install directory and run this command.:
+
+```
+cd ~/hyprconf-install
+chmod +x install.sh
+./install.sh
+```
+
+> [!TIP]
+> You can follow this part while installing. Here are the prompts that will be askes while installing.
 
 ### Prompts
 
@@ -141,6 +171,7 @@ bash <(curl -s https://raw.githubusercontent.com/shell-ninja/hyprconf-install/ma
 When you run the script, it will ask you some prompts. You can choose according to your need. You can choose multiple options using the space bar.
 
 <img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/1.png?raw=true" /> <br>
+
 </details>
 
 <details close>
@@ -149,6 +180,7 @@ When you run the script, it will ask you some prompts. You can choose according 
 You can choose which shell you want to install (only one). Install customized [zsh](https://github.com/shell-ninja/Zsh) or `fish`. If you choose `setup_bash`, it will Set up my configured [bash](https://github.com/shell-ninja/Bash).
 
 <img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/2.png?raw=true" /> <br>
+
 </details>
 
 <details close>
@@ -162,11 +194,29 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 <br>
 
-## Keyboard Shortcuts
+<a id="keyboards"></a>
 
-After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
 
-## Contribute.
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD-SHORTCUTS" width="450"/>
+
+> [!IMPORTANT]
+>
+> After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
+
+<br>
+
+<a id="contrib"></a>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=CONTRIBUTING" width="450"/>
 
 <h4>
 If you want to add your ideas in this project, just do some steps.
@@ -209,6 +259,8 @@ git push origin your_branch_name
 
 ### Thats all about contributing.
 
-## Reference
+<br>
 
-#### I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS" width="450"/>
+
+I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
