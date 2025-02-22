@@ -5,7 +5,7 @@
 
 This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out?
 
-> [!CAUTION]
+> [!WARNING]
 > This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
 > [!NOTE]
