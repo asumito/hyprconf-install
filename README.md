@@ -15,7 +15,9 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 <a href="#install"><kbd> <br> Install <br> </kbd></a>&ensp;&ensp;
 <a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
 <a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
-<a href="https://discord.gg/kUjz4td2"><kbd> <br> Discord <br> </kbd></a>
+<a href="https://discord.gg/kUjz4td2"><kbd> <br> 
+<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord" width="30"/>
+<br> </kbd></a>
 
 </div><br><br>
 
