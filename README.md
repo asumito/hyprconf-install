@@ -5,11 +5,25 @@
 
 This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out?
 
+<div align="center">
+
+<br>
+
+<a href="#screenshots"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
+<a href="#install"><kbd> <br> Install <br> </kbd></a>&ensp;&ensp;
+<a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
+<a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
+<a href="https://discord.gg/kUjz4td2"><kbd> <br> Discord <br> </kbd></a>
+
+</div><br><br>
+
 > [!WARNING]
 > This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
 > [!NOTE]
 > The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+
+<a href="#screenshots"></a>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=SCREENSHOTS" width="450"/>
 
@@ -78,7 +92,9 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
 <br>
 
-## Features
+<a href="#features"></a>
+
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=FEATURES" width="450"/>
 
 - Dynamic Wallpaper changing script
 - Change colors according to the changed wallpaper (pywal)
@@ -90,11 +106,10 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 - Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
 - Hypridle to handle auto lock and suspend when no action is runnin
 - Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
-<hr>
 
-<br>
+<a href="#install"></a>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
 ### Direct Installation
 
@@ -152,11 +167,15 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 
 > [!IMPORTANT]
 >
-> ## Keyboard Shortcuts
+> <a href="#keyboards"></a>
+>
+> ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD SHORTCUTS" width="450"/>
 >
 > After installation, just press the `SUPER + Shift + h`. It will show you all the keybinds.
 
-## Contribute.
+<a href="#contrib"></a>
+
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=CONTRIBUTING" width="450"/>
 
 <h4>
 If you want to add your ideas in this project, just do some steps.
@@ -199,6 +218,6 @@ git push origin your_branch_name
 
 ### Thats all about contributing.
 
-## Reference
+## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=THANKS TO" width="450"/>
 
 #### I would like to thank [JaKooLit](https://github.com/JaKooLit). I was inspired from his Hyprland installation scripts and prepared my script. I took and modified some of his scripts and used here.
