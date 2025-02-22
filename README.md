@@ -132,28 +132,33 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=INSTALLATION" width="450"/>
 
-### Direct Installation
-
-You can now easily install the config directly without cloning the repository. Just copy and paste the command bellow in your terminal and run it. Before that, make sure to install `curl`. Install it using pacman, dnf or zypper.
+> [!NOTE]
+>
+> ### Direct Installation
+>
+> You can now easily install the config directly without cloning the repository. Just copy and paste the command bellow in your terminal and run it. Before that, make sure to install `curl`. Install it using pacman, dnf or zypper.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/shell-ninja/hyprconf-install/main/direct_run.sh)
 ```
 
-### Manusally Installation
+> [!NOTE]
+>
+> ### Manusally Installation
 
-- Clone this repository:
+> - Clone this repository:
 
-  ```
-  git clone --depth=1 https://github.com/shell-ninja/hyprconf-install.git
-  ```
+```
+git clone --depth=1 https://github.com/shell-ninja/hyprconf-install.git
+```
 
-- Now cd into hyprconf-install directory and run this command.:
-  ```
-  cd ~/hyprconf-install
-  chmod +x install.sh
-  ./install.sh
-  ```
+> - Now cd into hyprconf-install directory and run this command.:
+
+```
+cd ~/hyprconf-install
+chmod +x install.sh
+./install.sh
+```
 
 > [!TIP]
 > You can follow this part while installing. Here are the prompts that will be askes while installing.
