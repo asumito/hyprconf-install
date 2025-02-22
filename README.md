@@ -3,20 +3,18 @@
 <h2 align="center">Shell Ninja</h2>
 <br>
 
-<h3>This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out? </h3>
+This Hyprland configuration is kind of minila looking, but also little bit gorgeous I guess. Why don't you check it out?
 
-## [ WARNING ]
+> [!CAUTION]
+> This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
-Please note that this script if fully ready now. But for `openSUSE`, there is a little issue in installing `Hypridle` && `xdg-desktop-portal-hyprland` because a little dependency is missing in the repo of this OS. After it's being added, then the script for `openSUSE` will be totally ready.
-
-## [ NOTE ]
-
-The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+> [!NOTE]
+> The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
 
 ## Screenshots
 
 <details close>
-<summary>Themes</summary>
+<summary>Overall</summary>
 <p align="center">
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/1.png?raw=true" />
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/2.png?raw=true" /> <br>
@@ -34,6 +32,9 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/menu/4.png?raw=true" />
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/menu/3.png?raw=true" />
+    <br>
+
+   <img aligh="center" width="99%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/clipboard.png?raw=true" />
 </p> <br>
 </details>
 
@@ -60,7 +61,11 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 <details close>
 <summary>Lock Screen</summary>
 <p align="center">
-   <img aligh="center" width="99%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lock.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-1.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-2.png?raw=true" />
+        <br>
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/lock-3.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/lockscreen/selecttheme.png?raw=true" />
 </p>
 </details>
 
@@ -75,38 +80,17 @@ The dotfile used in this script is a rolling release config. I fix issues and ad
 
 ## Features
 
-- <h4>Dynamic Wallpaper changing script</h4>
-- <h4>Change colors according to the changed wallpaper (pywal)</h4>
-- <h4>Light and Dark Mode</h4>
-- <h4>Select and Open apps using Rofi app launcher</h4>
-- <h4>Gorgeous looking Waybar styles</h4>
-- <h4>Rofi app launcher styles</h4>
-- <h4>Rofi power menu</h4>
-- <h4>Opening some web pages as single tab (chatGPT, Gemini, Facebook, YouTube, WhatsApp, Photopea)</h4>
-- <h4>Locking with Hyprlock</h4>
-- <h4>Set your user image in Hyprlock ( a script to set your user image )</h4>
-- <h4>Hypridle to handle auto lock and suspend when no action is running </h4>
-- <h4>Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default </h4>
+- Dynamic Wallpaper changing script
+- Change colors according to the changed wallpaper (pywal)
+- Select and Open apps using Rofi app launcher
+- Gorgeous looking Waybar styles
+- Rofi app launcher styles
+- Rofi power menu
+- Locking with Hyprlock
+- Set your user image in Hyprlock ( a script `~/.config/hypr/add_user.sh` to set your user image )
+- Hypridle to handle auto lock and suspend when no action is runnin
+- Hyprsunset to use nightlight, `SUPER` + F1 to increase, `SUPER` + F2 to decrease and `SUPER` + F3 to set to default
   <br>
-
-## Configure for OpenBangla-Keyboard ( to write in bangla )
-
-<details close>
-<summary>Configuring OpenBangla-Keyboard</summary>
-<h4>
-If you have OpenBangla-Keyboard installed, then you need to follow some steps to add the keyboard in fcitx5. Just follow the instructions bellow.
-</h4>
-<h4>1) Right click on this keyboard icon in you waybar.</h4>
-
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-1.jpg?raw=true" /> <br>
-
-<h4>2) Search for "openbangla" and select the keyboard</h4>
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-2.jpg?raw=true" /> <br>
-<h4>3) Now add the keyboard by clicking the 'right aero' icon and click on apply.</h4>
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/openbangla/step-3.jpg?raw=true" /> <br>
-
-<h4>Now you can switch keyboard using "CTRL + Space"</h4> <br>
-</details>
 
 ## Installation
 
@@ -141,6 +125,7 @@ bash <(curl -s https://raw.githubusercontent.com/shell-ninja/hyprconf-install/ma
 When you run the script, it will ask you some prompts. You can choose according to your need. You can choose multiple options using the space bar.
 
 <img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/1.png?raw=true" /> <br>
+
 </details>
 
 <details close>
@@ -149,6 +134,7 @@ When you run the script, it will ask you some prompts. You can choose according 
 You can choose which shell you want to install (only one). Install customized [zsh](https://github.com/shell-ninja/Zsh) or `fish`. If you choose `setup_bash`, it will Set up my configured [bash](https://github.com/shell-ninja/Bash).
 
 <img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/2.png?raw=true" /> <br>
+
 </details>
 
 <details close>
