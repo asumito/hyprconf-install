@@ -22,8 +22,8 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 > [!WARNING]
 > This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
-> [!NOTE]
-> The dotfile used in this script is a rolling release config. I fix issues and add features very often. Just to update in the latest commits, you have to use `SUPER Shift U` keybind. It will update to the latest [hyprconf](https://github.com/shell-ninja/hyprconf) configuration and restore the cache.
+> [!IMPORTANT]
+> If you are planning to install this config in your current working machine, please make sure to take a snap shot of your system. If anything by chance goes wrong, will be able to go back to your system.
 
 <br>
 

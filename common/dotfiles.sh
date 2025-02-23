@@ -44,17 +44,7 @@ log="$log_dir/dotfiles-$(date +%d-%m-%y).log"
 mkdir -p "$log_dir"
 touch "$log"
 
-
-# asking user if he want's to install the stable or rolling release.
-msg ask "Which release would you like to install?"
-msg att "Stable: it will be updated once in a month..."
-msg att "Rolling: it will be updated frequently..."
-choice=$(gum choose \
-    --cursor.foreground "#00FFFF" \
-    --item.foreground "#fff" \
-    --selected.foreground "#00FF00" \
-    "Stable" "Rolling"
-)
+choice=$(cat "$parent_dir/.cache/version")
 
 case $choice in
     Stable)
@@ -69,9 +59,6 @@ esac
 
 sleep 1
 echo
-
-# msg act "Clonning the dotfiles repository and setting it to your system..."
-# Create the cache directory if it doesn't exist
 
 # Clone the repository and log the output
 if [[ ! -d "$parent_dir/.cache/hyprconf" ]]; then
@@ -95,62 +82,6 @@ else
   msg err "Could not setup dotfiles.." 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
   exit 1
 fi
-
-sleep 1 && clear
-
-msg att "By default, the keyboard layout will be 'us'"
-gum confirm "Is it ok for you?" \
-    --prompt.foreground "#ff8700" \
-    --affirmative "Yes! Set" \
-    --selected.background "#00FFFF" \
-    --selected.foreground "#000" \
-    --negative "No! Change"
-
-if [ $? -eq 1 ]; then
-    layout=$(localectl \
-        list-x11-keymap-layouts \
-        | gum filter \
-        --height 15 \
-        --prompt="<> " \
-        --cursor-text.foreground "#00FFFF" \
-        --indicator.foreground "#00FFFF" \
-        --placeholder "Search keyboard layout..."
-    )
-else
-    layout="us"
-fi
-
-gum confirm "Would you like to set a keyboard variant?" \
-    --prompt.foreground "#ff8700" \
-    --affirmative "Sure!" \
-    --selected.background "#00FFFF" \
-    --selected.foreground "#000" \
-    --negative "Skip"
-
-if [ $? -eq 0 ]; then
-    variant=$(localectl \
-        list-x11-keymap-variants \
-        | gum filter \
-        --height 15 \
-        --prompt="<> " \
-        --cursor-text.foreground "#00FFFF" \
-        --indicator.foreground "#00FFFF" \
-        --placeholder "Find your variant..."
-    )
-else
-    variant=""
-fi
-
-msg att "Selected Layout: $layout\n   Selected Variant: ${variant:-None}"
-
-# Apply changes to Hyprland config
-config="$HOME/.config/hypr/configs/settings.conf"
-sed -i "s/kb_layout = .*/kb_layout = $layout/g" "$config"
-sed -i "s/kb_variant = .*/kb_variant = $variant/g" "$config"
-
-echo
-
-msg dn "Setting up the keyboard layout was successful.."
 
 touch "$HOME/.config/hypr/.cache/.version"
 echo "$version" >> "$HOME/.config/hypr/.cache/.version"
