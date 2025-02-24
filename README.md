@@ -209,6 +209,7 @@ Also, you can choose the keyboard variant, or keep it empty.
 
 <p align="center">
 - Keyboard Layout
+<br>
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_layout.png?raw=true" />
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_layout_select.png?raw=true" />
 </p>
@@ -217,6 +218,7 @@ Also, you can choose the keyboard variant, or keep it empty.
 
 <p align="center">
 - Keyboar Variant
+<br>
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_variant.png?raw=true" />
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_variant_select.png?raw=true" />
 </p>
