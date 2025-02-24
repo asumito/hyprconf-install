@@ -80,17 +80,12 @@ check_pkgman() {
 }
 
 check_pkgman
-clear && fn_welcome && sleep 1
+clear && fn_welcome && sleep 0.3
 
 # starting the main script prompt...
 . /etc/os-release
-gum spin --spinner line \
-         --spinner.foreground "#00FFFF" \
-         --title "Starting the main scripts for "$NAME"..." \
-         --title.foreground "#dddddd" -- \
-         sleep 3
+msg act "Starting the main scripts for ${cyan}$NAME${end}..." && sleep 2
 clear
-
 
 # =================================================== #
 # =========  functions to ask user prompts  ========= #
