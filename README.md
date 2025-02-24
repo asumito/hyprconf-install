@@ -207,17 +207,17 @@ Now you can choose from the `Stable` and `Roling Release` version
 The default keyboard layout will be `us`. If it's not your preferred keyboard layout, you can pick your one. <br>
 Also, you can choose the keyboard variant, or keep it empty.
 
-<p align="center">
 - Keyboard Layout
+<p align="center">
 <br>
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_layout.png?raw=true" />
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_layout_select.png?raw=true" />
 </p>
-    
+
 <br>
 
-<p align="center">
 - Keyboar Variant
+<p align="center">
 <br>
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_variant.png?raw=true" />
     <img width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/kb_variant_select.png?raw=true" />
