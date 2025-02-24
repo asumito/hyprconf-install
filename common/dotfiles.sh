@@ -55,6 +55,10 @@ case $choice in
         version="main"
         msg act "Clonning the dotfiles rolling release repository and setting it to your system..."
         ;;
+    *)
+        version="stable"
+        msg act "Clonning the dotfiles stable repository and setting it to your system..."
+        ;;
 esac
 
 sleep 1
