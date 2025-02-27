@@ -22,7 +22,12 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 > [!WARNING]
 > This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
-> [!IMPORTANT]
+> [!NOTE]
+> I have tested this script in several distros, like: <br>[Arch](https://archlinux.org) <br>[EndeavourOs](https://endeavouros.com/) <br>[Garuda](https://garudalinux.org/) <br>[Fedora](https://fedoraproject.org/)
+>
+> I will test in some more distros soon
+
+> [!TIP]
 > If you are planning to install this config in your current working machine, please make sure to take a snap shot of your system. If anything by chance goes wrong, will be able to go back to your system.
 
 <br>
@@ -44,6 +49,9 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/3.png?raw=true" />
    <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/4.png?raw=true" />
+
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/5.png?raw=true" />
+   <img aligh="center" width="49%" src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/theme/6.png?raw=true" />
 </p> <br>
 </details>
 
