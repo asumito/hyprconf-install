@@ -80,7 +80,6 @@ other_packages=(
     kvantum
     kvantum-qt5
     lxappearance
-    mate-polkit
     network-manager-applet
     networkmanager
     nodejs
@@ -93,6 +92,7 @@ other_packages=(
     pamixer
     pavucontrol
     pciutils
+    polkit-gnome
     python-pywal
     qt5ct
     qt5-svg
