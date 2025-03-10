@@ -44,29 +44,11 @@ log="$log_dir/dotfiles-$(date +%d-%m-%y).log"
 mkdir -p "$log_dir"
 touch "$log"
 
-choice=$(cat "$parent_dir/.cache/version")
-
-case $choice in
-    Stable)
-        version="stable"
-        msg act "Clonning the dotfiles stable repository and setting it to your system..."
-        ;;
-    Rolling)
-        version="main"
-        msg act "Clonning the dotfiles rolling release repository and setting it to your system..."
-        ;;
-    *)
-        version="stable"
-        msg act "Clonning the dotfiles stable repository and setting it to your system..."
-        ;;
-esac
-
-sleep 1
 echo
 
 # Clone the repository and log the output
 if [[ ! -d "$parent_dir/.cache/hyprconf" ]]; then
-  git clone --depth=1 --branch="$version" https://github.com/shell-ninja/hyprconf.git "$parent_dir/.cache/hyprconf" 2>&1 | tee -a "$log" &> /dev/null
+  git clone --depth=1 https://github.com/shell-ninja/hyprconf.git "$parent_dir/.cache/hyprconf" 2>&1 | tee -a "$log" &> /dev/null
 fi
 
 sleep 1
@@ -86,8 +68,5 @@ else
   msg err "Could not setup dotfiles.." 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
   exit 1
 fi
-
-touch "$HOME/.config/hypr/.cache/.version"
-echo "$version" >> "$HOME/.config/hypr/.cache/.version"
 
 sleep 1 && clear
