@@ -80,6 +80,7 @@ other_packages=(
     kvantum
     kvantum-qt5
     lxappearance
+    mpv-mpris
     network-manager-applet
     networkmanager
     nodejs
