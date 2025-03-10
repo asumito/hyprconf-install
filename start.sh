@@ -303,23 +303,8 @@ fi
 
 # ---------------- Themes and dotfiles (hyprconf)
 "$common_scripts/themes.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-
-# asking user if he want's to install the stable or rolling release.
-msg ask "Which release would you like to install?"
-msg att "Stable: it will be updated once in a month..."
-msg att "Rolling: it will be updated frequently..."
-choice=$(gum choose \
-    --cursor.foreground "#00FFFF" \
-    --item.foreground "#fff" \
-    --selected.foreground "#00FF00" \
-    "Stable" "Rolling"
-)
-
-touch "$cache_dir/version"
-echo "$choice" >> "$cache_dir/version"
-sleep 1
 "$common_scripts/dotfiles.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-sleep 1
+
 
 # setting up the keyboard leyout
 msg att "By default, the keyboard layout will be 'us'"
