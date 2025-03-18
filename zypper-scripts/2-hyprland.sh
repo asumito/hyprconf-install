@@ -54,7 +54,7 @@ touch "$log"
 
 hypr_pkgs=(
     hyprland
-    hyprpaper
+    # hyprpaper
     hyprcursor
     hyprland-protocols-devel
     wayland-protocols-devel

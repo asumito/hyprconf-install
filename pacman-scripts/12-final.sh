@@ -83,7 +83,6 @@ checkup=(
     kvantum
     kvantum-qt5
     lxappearance
-    mate-polkit
     network-manager-applet
     networkmanager
     nodejs
@@ -96,6 +95,7 @@ checkup=(
     pamixer
     pavucontrol
     pciutils
+    polkit-gnome
     python-pywal
     pyprland
     qt5ct

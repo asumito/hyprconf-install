@@ -46,8 +46,9 @@ mkdir -p "$log_dir"
 touch "$log"
 
 removable=(
-    wofi
+    mako
     openbox
+    wofi
 )
 
 for pkg in "${removable[@]}"; do

@@ -65,7 +65,7 @@ fi
 _hypr=(
     hyprland
     hyprlock
-    hyprpaper
+    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset
