@@ -67,7 +67,7 @@ aur_helper=$(command -v yay || command -v paru) # find the aur helper
 _hypr=(
     hyprland
     hyprlock
-    hyprpaper
+    # hyprpaper
     hypridle
     hyprcursor
 )

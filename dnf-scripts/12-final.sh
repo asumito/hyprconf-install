@@ -77,7 +77,6 @@ checkup=(
     libX11-devel
     libXext-devel
     lxappearance
-    mate-polkit
     make
     network-manager-applet
     NetworkManager-tui
@@ -88,6 +87,7 @@ checkup=(
     pavucontrol
     pipewire-alsa
     pipewire-utils
+    polkit-gnome
     pulseaudio-utils
     python3-requests
     python3-devel

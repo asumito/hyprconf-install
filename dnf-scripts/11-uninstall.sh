@@ -48,17 +48,20 @@ touch "$log"
 
 removable_pkg=(
     wofi
+    mako
 )
 
-if rpm -q "$removable_pkg" &> /dev/null; then
-    msg act "$removable_pkg was found, removing it..."
-    sudo dnf remove -y "$removable_pkg" 2>&1 | tee -a "$log"
+for pkg in "${removable_pkg[@]}"; do
+    if rpm -q "$pkg" &> /dev/null; then
+        msg act "$pkg was found, removing it..."
+        sudo dnf remove -y "$pkg" 2>&1 | tee -a "$log"
 
-    if rpm -q "$removable_pkg" &> /dev/null; then
-        msg err "Could not remove $removable_pkg"
-    else
-        msg dn "$removable_pkg was removed successfully!"
+        if rpm -q "$pkg" &> /dev/null; then
+            msg err "Could not remove $pkg"
+        else
+            msg dn "$pkg was removed successfully!"
+        fi
     fi
-fi
+done
 
 sleep 1 && clear

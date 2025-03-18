@@ -14,6 +14,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 <a href="#screenshots"><kbd> <br> Screenshots <br> </kbd></a>&ensp;&ensp;
 <a href="#install"><kbd> <br> Install <br> </kbd></a>&ensp;&ensp;
 <a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
+<a href="#updates"><kbd> <br> Updates <br> </kbd></a>&ensp;&ensp;
 <a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
 <a href="https://discord.gg/kUjz4td2"><kbd> <br> Discord <br> </kbd></a>
 
@@ -201,15 +202,6 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 </details>
 
 <details close>
-<summary>Install Version</summary>
-
-Now you can choose from the `Stable` and `Roling Release` version
-
-<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/version.png?raw=true" />
-<br>
-</details>
-
-<details close>
 <summary>keyboard layout and variant</summary>
 <br>
 
@@ -241,6 +233,17 @@ Also, you can choose the keyboard variant, or keep it empty.
 </div>
 
 ## <img src="https://readme-typing-svg.herokuapp.com?font=Lexend+Giga&size=25&pause=1000&color=90EE90&vCenter=true&width=435&height=25&lines=KEYBOARD-SHORTCUTS" width="450"/>
+
+<br>
+
+<div align="right">
+  <br>
+  <a href="#top"><kbd> <br> 🡅 <br> </kbd></a>
+</div>
+
+<a id="updates"></a>
+
+## See last changes (updates) [here](https://github.com/shell-ninja/hyprconf-install/blob/main/UPDATES.md)
 
 > [!IMPORTANT]
 >
