@@ -57,7 +57,7 @@ cursor="$parent_dir/assets/Bibata-Modern-Ice.tar.xz"
 
 # creating icons and theme directory
 mkdir -p ~/.themes
-mkdir -p ~/.icons
+mkdir -p ~/.local/share/icons
 
 # installing tokyo night icons.
 Download_URL="https://github.com/ljmill/tokyo-night-icons/releases/latest/download/TokyoNight-SE.tar.bz2"
@@ -75,8 +75,8 @@ if [ ! -d "$HOME/.icons/TokyoNight-SE" ]; then
     fi
 
     # extracting the icon
-    tar -xf TokyoNight-SE.tar.bz2 -C ~/.icons/ &> /dev/null 2>&1 | tee -a "$log"
-    tar -xf "$icon" -C ~/.icons/ &> /dev/null 2>&1 | tee -a "$log"
+    tar -xf TokyoNight-SE.tar.bz2 -C ~/.local/share/icons/ &> /dev/null 2>&1 | tee -a "$log"
+    tar -xf "$icon" -C ~/.local/share/icons/ &> /dev/null 2>&1 | tee -a "$log"
 
     sleep 2
 
@@ -86,12 +86,12 @@ if [ ! -d "$HOME/.icons/TokyoNight-SE" ]; then
         rm -rf "TokyoNight-SE.tar.bz2"
     else
         msg err "Could not install Tokyo Night icons.."
-        echo "[ ERROR ] - Could not install Tokyo Night icons. (╥﹏╥)\n" 2>&1 | tee -a "$log" &> /dev/null
+        echo "[ ERROR ] - Could not install Tokyo Night icons.\n" 2>&1 | tee -a "$log" &> /dev/null
     fi
 fi
 
 # installing the cursor
-tar -xf "$cursor" -C ~/.icons/ &> /dev/null 2>&1 | tee -a "$log"
+tar -xf "$cursor" -C ~/.local/share/icons/ &> /dev/null 2>&1 | tee -a "$log"
 
 # clear
 
@@ -107,8 +107,8 @@ msg dn "Themes copied successfully."
 sleep 1
 
 # setting default themes, icon and cursor
-gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
-gsettings set org.gnome.desktop.interface icon-theme "TokyoNight-SE"
-gsettings set org.gnome.desktop.interface cursor-theme "Bibata-Modern-Ice"
+gsettings set org.gnome.desktop.interface gtk-theme 'Dracula'
+gsettings set org.gnome.desktop.interface icon-theme 'TokyoNight-SE'
+gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
 
 sleep 1 && clear
