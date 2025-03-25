@@ -79,6 +79,7 @@ other_packages=(
     kitty
     kvantum
     kvantum-qt5
+    less
     lxappearance
     mpv-mpris
     network-manager-applet
