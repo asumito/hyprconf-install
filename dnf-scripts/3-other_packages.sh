@@ -86,6 +86,7 @@ main_packages=(
   neovim
   nvtop
   pamixer
+  parallel
   pciutils
   pavucontrol
   pipewire-alsa

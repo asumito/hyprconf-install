@@ -93,6 +93,7 @@ other_packages=(
     pacman-contrib
     pamixer
     pavucontrol
+    parallel
     pciutils
     polkit-gnome
     python-pywal
