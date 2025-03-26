@@ -76,6 +76,7 @@ main_packages=(
   kitty
   kvantum
   kvantum-qt5
+  less
   libX11-devel
   libXext-devel
   lxappearance
@@ -85,6 +86,7 @@ main_packages=(
   neovim
   nvtop
   pamixer
+  parallel
   pciutils
   pavucontrol
   pipewire-alsa

@@ -79,6 +79,7 @@ other_packages=(
     kitty
     kvantum
     kvantum-qt5
+    less
     lxappearance
     mpv-mpris
     network-manager-applet
@@ -92,6 +93,7 @@ other_packages=(
     pacman-contrib
     pamixer
     pavucontrol
+    parallel
     pciutils
     polkit-gnome
     python-pywal

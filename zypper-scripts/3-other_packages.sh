@@ -68,6 +68,7 @@ hypr_package=(
   kvantum-qt6
   kvantum-themes
   kvantum-manager
+  less
   libnotify-tools
   lxappearance
   make
