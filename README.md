@@ -16,7 +16,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 <a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
 <a href="#updates"><kbd> <br> Updates <br> </kbd></a>&ensp;&ensp;
 <a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
-<a href="https://discord.gg/kUjz4td2"><kbd> <br> Discord <br> </kbd></a>
+<a href="https://t.me/shell_ninja"><kbd> <br> Telegram <br> </kbd></a>
 
 </div><br><br>
 
