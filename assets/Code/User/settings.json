@@ -12,28 +12,7 @@
     "editor.cursorBlinking": "expand",
     "terminal.integrated.fontSize": 18,
     "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "Theme Darker",
+    "workbench.colorTheme": "Tokyo Storm Gogh",
     "git.enableSmartCommit": true,
     "files.autoSave": "afterDelay",
-    "workbench.colorCustomizations": {
-        "editor.background": "#0F0F13",
-        "sideBar.background": "#0F0F13",
-        "sideBar.border": "#0F0F13",
-        "sideBar.foreground": "#ccb7b6",
-        "editorGroupHeader.tabsBackground": "#0F0F13",
-        "activityBar.background": "#0F0F13",
-        "activityBar.border": "#0F0F13",
-        "activityBar.foreground": "#ccb7b6",
-        "tab.activeBackground": "#0F0F13",
-        "tab.activeForeground": "#ccb7b6",
-        "tab.activeBorder": "#0F0F13",
-        "tab.border": "#0F0F13",
-        "tab.inactiveBackground": "#0F0F13",
-        "tab.inactiveForeground": "#ccb7b6",
-        "terminal.foreground": "#ccb7b6",
-        "terminal.background": "#0F0F13"
-    },
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
 }
