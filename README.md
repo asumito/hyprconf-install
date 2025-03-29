@@ -16,7 +16,7 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 <a href="#keyboards"><kbd> <br> keyboard Shortcuts <br> </kbd></a>&ensp;&ensp;
 <a href="#updates"><kbd> <br> Updates <br> </kbd></a>&ensp;&ensp;
 <a href="#contrib"><kbd> <br> Contrubution <br> </kbd></a>&ensp;&ensp;
-<a href="https://t.me/shell_ninja"><kbd> <br> Telegram <br> </kbd></a>
+<a href="https://t.me/+YEmEXQ3EOOE3MzBl"><kbd> <br> Telegram <br> </kbd></a>
 
 </div><br><br>
 
@@ -24,12 +24,12 @@ This Hyprland configuration is kind of minila looking, but also little bit gorge
 > This script is fully ready, but it may create some little issue in `openSUSE`. I'll fix that as soon as possible.
 
 > [!NOTE]
-> I have tested this script in several distros, like: <br>[Arch](https://archlinux.org) <br>[EndeavourOs](https://endeavouros.com/) <br>[Garuda](https://garudalinux.org/) <br>[Fedora](https://fedoraproject.org/)
+> I have tested this script in several distros, like: <br>[Arch](https://archlinux.org) <br>[EndeavourOs](https://endeavouros.com/) <br>[Garuda](https://garudalinux.org/) <br>[Fedora](https://fedoraproject.org/) <br>[Nobara](https://nobaraproject.org/)
 >
 > I will test in some more distros soon
 
 > [!TIP]
-> If you are planning to install this config in your current working machine, please make sure to take a snap shot of your system. If anything by chance goes wrong, will be able to go back to your system.
+> If you are planning to install this config in your current working machine, please make sure to take a snap shot of your system. If anything by chance goes wrong, you will be able to go back to your system.
 
 <br>
 
@@ -186,8 +186,6 @@ When you run the script, it will ask you some prompts. You can choose according 
 <details close>
 <summary>Install Shell</summary>
 
-You can choose which shell you want to install (only one). Install customized [zsh](https://github.com/shell-ninja/Zsh) or `fish`. If you choose `setup_bash`, it will Set up my configured [bash](https://github.com/shell-ninja/Bash).
-
 <img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/2.png?raw=true" /> <br>
 
 </details>
@@ -224,7 +222,6 @@ Also, you can choose the keyboard variant, or keep it empty.
 </details>
 
 <br>
-
 <a id="keyboards"></a>
 
 <div align="right">
