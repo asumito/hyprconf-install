@@ -302,8 +302,24 @@ fi
 
 
 # ---------------- Themes and dotfiles (hyprconf)
+
+msg ask "Choose which config you want to setup: " && sleep 1
+msg att "The 'hyprconf' config will change colors according to the current wallpaper using ${cyan}pywal${end}, inspired by JaKooLit's cofig." && echo
+msg att "The 'hyprconf-v2' config hase some pre-configured themes and color pallets, inspired by HyDE."
+
+choice=$(gum choose \
+    --limit=1 \
+    --cursor.foreground "#00FFFF" \
+    --item.foreground "#fff" \
+    --selected.foreground "#00FF00" \
+    "hyprconf" "hyprconf-v2"
+)
+touch "$cache_dir/dotfiles"
+echo "$choice" > "$cache_dir/dotfiles"
+sleep 1 && clear
+
 "$common_scripts/themes.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-"$common_scripts/dotfiles.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
+"$common_scripts/${choice}.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
 
 
 # setting up the keyboard leyout
