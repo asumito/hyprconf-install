@@ -369,7 +369,12 @@ fi
 msg att "Selected Layout: $layout\n   Selected Variant: ${variant:-None}"
 
 # Apply changes to Hyprland config
-kbd_config="$HOME/.config/hypr/configs/settings.conf"
+if [[ -d "$HOME/.config/hypr/confs" ]]; then        # for hyprconf-v2
+    kbd_config="$HOME/.config/hypr/confs/settings.conf"
+elif [[ -d "$HOME/.config/hypr/configs" ]]; then    # for hyprconf
+    kbd_config="$HOME/.config/hypr/configs/settings.conf"
+fi
+
 sed -i "s/kb_layout = .*/kb_layout = $layout/g" "$kbd_config"
 sed -i "s/kb_variant = .*/kb_variant = $variant/g" "$kbd_config"
 
