@@ -72,7 +72,7 @@ checkup=(
     gvfs-mtp
     hyprland
     hyprlock
-    hyprpaper
+    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset
