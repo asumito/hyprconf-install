@@ -303,6 +303,8 @@ fi
 
 # ---------------- Themes and dotfiles (hyprconf)
 
+clear
+
 msg ask "Choose which config you want to setup: " && sleep 1
 msg att "The 'hyprconf' config will change colors according to the current wallpaper using ${cyan}pywal${end}, inspired by JaKooLit's cofig." && echo
 msg att "The 'hyprconf-v2' config hase some pre-configured themes and color pallets, inspired by HyDE."

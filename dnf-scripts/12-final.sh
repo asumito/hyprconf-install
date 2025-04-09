@@ -57,7 +57,7 @@ fi
 checkup=(
     hyprland
     hyprlock
-    hyprpaper
+    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset

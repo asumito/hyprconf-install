@@ -72,7 +72,7 @@ checkup=(
     gvfs-mtp
     hyprland
     hyprlock
-    hyprpaper
+    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset
@@ -139,7 +139,7 @@ printf "\n\n"
 # Instlling main packages...
 for final_check in "${to_install[@]}"; do
     msg act "Somehow $final_check could not be installed before. Installing it now..."
-    aur_helper -Syy "$final_check" --noconfirm &> /dev/null
+    $aur_helper -S "$final_check" --noconfirm &> /dev/null
 
     if sudo pacman -Q "$final_check" &> /dev/null; then
 
