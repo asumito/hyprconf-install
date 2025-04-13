@@ -60,7 +60,7 @@ checkup=(
     cava
     cliphist
     curl
-    dunst
+    # dunst
     eog
     fastfetch
     ffmpeg
@@ -96,7 +96,9 @@ checkup=(
     pavucontrol
     pciutils
     polkit-gnome
+    power-profiles-daemon
     python-pywal
+    python-gobject
     pyprland
     qt5ct
     qt5-svg
@@ -110,6 +112,7 @@ checkup=(
     ripgrep
     rofi-wayland
     swappy
+    swaync
     swww
     sddm
     thunar
