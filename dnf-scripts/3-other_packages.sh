@@ -65,7 +65,7 @@ fi
 
 main_packages=(
   curl
-  dunst
+  # dunst
   eog
   fastfetch
   ffmpeg-free
@@ -92,9 +92,11 @@ main_packages=(
   pipewire-alsa
   pipewire-utils
   polkit-gnome
+  power-profiles-daemon
   pulseaudio-utils
   python3-requests
   python3-devel
+  python3-gobject
   python3-pip
   python3-pillow
   python3-pyquery
@@ -104,6 +106,7 @@ main_packages=(
   ripgrep
   rofi-wayland
   slurp
+  SwayNotificationCenter
   swappy
   tar
   unzip

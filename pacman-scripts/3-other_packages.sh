@@ -69,7 +69,7 @@ other_packages=(
     btop
     cliphist
     curl
-    dunst
+    # dunst
     eog
     fastfetch
     ffmpeg
@@ -96,7 +96,9 @@ other_packages=(
     parallel
     pciutils
     polkit-gnome
+    power-profiles-daemon
     python-pywal
+    python-gobject
     qt5ct
     qt5-svg
     qt6ct
@@ -106,6 +108,7 @@ other_packages=(
     ripgrep
     rofi-wayland
     swappy
+    swaync
     swww
     unzip
     waybar

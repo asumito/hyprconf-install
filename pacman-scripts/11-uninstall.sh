@@ -48,12 +48,13 @@ touch "$log"
 removable_pkg=(
     wofi
     mako
+    dunst
 )
 
 
 for pkg in "${removable_pkg[@]}"; do
     if sudo pacman -Q "$pkg" &> /dev/null; then
-        mag att "$pkg was found. It will be removed."
+        msg att "$pkg was found. It will be removed."
         sudo pacman -Rns --noconfirm "$pkg" &> /dev/null 2>&1 | tee -a "$log"
         
         sleep 1

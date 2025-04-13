@@ -49,6 +49,7 @@ touch "$log"
 removable_pkg=(
     wofi
     mako
+    dunst
 )
 
 for pkg in "${removable_pkg[@]}"; do

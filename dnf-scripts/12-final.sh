@@ -63,7 +63,7 @@ checkup=(
     hyprsunset
     pyprland
     curl
-    dunst
+    # dunst
     eog
     fastfetch
     ffmpeg-free
@@ -88,9 +88,11 @@ checkup=(
     pipewire-alsa
     pipewire-utils
     polkit-gnome
+    power-profiles-daemon
     pulseaudio-utils
     python3-requests
     python3-devel
+    python3-gobject
     python3-pip
     python3-pillow
     python3-pyquery
@@ -100,6 +102,7 @@ checkup=(
     ripgrep
     rofi-wayland
     slurp
+    SwayNotificationCenter
     swappy
     tar
     unzip
