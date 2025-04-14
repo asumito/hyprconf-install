@@ -200,6 +200,19 @@ You have the freedom to choose a web browser. I you don't want to install any, y
 </details>
 
 <details close>
+<summary>Install From 2 versions</summary>
+
+You can choose between the [Hyprconf](https://github.com/shell-ninja/hyprconf) and [Hyprconf-V2](https://github.com/shell-ninja/hyprconf-v2) configuration.
+<br>
+
+- Hyprconf is a dynamic color changing configuration which use pywal to change colors.
+- Hyprconf-V2 is a theme based configuration. I has pre-configured themes.
+
+<img src="https://github.com/shell-ninja/Screen-Shots/blob/main/hyprconf/install/version.png?raw=true" />
+<br>
+</details>
+
+<details close>
 <summary>keyboard layout and variant</summary>
 <br>
 
