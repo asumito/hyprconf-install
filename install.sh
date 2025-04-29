@@ -75,7 +75,7 @@ gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo
     sudo yum install --assumeyes gum &> /dev/null
 
     if command -v gum &> /dev/null; then
-        printf "${cyan}::${end} Successfully installed ${cyan}gim${end}...\n"
+        printf "${cyan}::${end} Successfully installed ${cyan}gum${end}...\n"
     fi
 fi
 
