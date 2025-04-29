@@ -65,10 +65,10 @@ fi
 _hypr=(
     hyprland
     hyprlock
-    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset
+    hyprpolkitagent
     pyprland
 )
 

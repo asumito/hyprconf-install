@@ -65,7 +65,6 @@ fi
 
 main_packages=(
   curl
-  # dunst
   eog
   fastfetch
   ffmpeg-free
@@ -91,7 +90,6 @@ main_packages=(
   pavucontrol
   pipewire-alsa
   pipewire-utils
-  polkit-gnome
   power-profiles-daemon
   pulseaudio-utils
   python3-requests
