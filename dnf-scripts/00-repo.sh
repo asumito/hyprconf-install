@@ -65,8 +65,9 @@ fi
 copr_repos=(
     solopasha/hyprland
     tofik/nwg-shell
-    metainfa/yazi
+    lihaohong/yazi
     erikreider/SwayNotificationCenter  
+    alternateved/eza
 )
 
 # enabling 3rd party repo

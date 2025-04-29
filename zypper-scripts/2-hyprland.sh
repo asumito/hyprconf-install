@@ -69,6 +69,7 @@ hypr_others=(
   python-base
   hyprlock
   hypridle
+  hyprpolkitagent
 )
 
 # checking already installed packages 
