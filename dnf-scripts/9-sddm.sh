@@ -112,20 +112,7 @@ msg act "Activating sddm service..."
 sudo systemctl set-default graphical.target 2>&1 | tee -a "$log"
 sudo systemctl enable sddm.service 2>&1 | tee -a "$log"
 
+# run sddm theme script
+"$common_scripts/sddm_theme.sh"
+
 sleep 1 && clear
-
-msg act "Setting the sddm theme for fedora..."
-git clone --depth=1 https://github.com/shell-ninja/sddm "$parent_dir/.cache/sddm" &> /dev/null
-
-if [[ -d "$parent_dir/.cache/sddm" ]]; then
-  sudo cp -r "$parent_dir/.cache/sddm/fedora-sddm" "/usr/share/sddm/themes/"
-fi
-
-if [[ -d "/usr/share/sddm/themes/fedora-sddm" ]]; then
-  msg act "Setting up the Login Screen..."
-  sddm_conf_dir=/etc/sddm.conf.d
-  [ ! -d "$sddm_conf_dir" ] && { msg att "$sddm_conf_dir not found, creating..."; sudo mkdir -p "$sddm_conf_dir"; }
-  echo -e "[Theme]\nCurrent=fedora-sddm" | sudo tee "$sddm_conf_dir/theme.conf.user" &> /dev/null
-else
-  msg err "Sorry, could not set the login theme..."
-fi

@@ -48,25 +48,24 @@ mkdir -p "$log_dir"
 touch "$log"
 
 # Install THEME
-theme="$parent_dir/assets/minimal_sddm.tar.gz"
+theme="$parent_dir/.cache/sequoia-sddm-theme"
 theme_dir=/usr/share/sddm/themes
 
 # creating sddm theme dir
-if [ ! -d "$theme_dir" ]; then
-    msg att "Sddm theme dir was not found, creatint it..."
-    sudo mkdir -p "$theme_dir"
-fi
+[ ! -d "$theme_dir" ] && sudo mkdir -p "$theme_dir"
+
+msg act "Clonning sddm theme..."
+git clone --depth=1 https://github.com/shell-ninja/sequoia-sddm-theme.git "$parent_dir/.cache/sequoia-sddm-theme" &> /dev/null
 
 # Set up SDDM
 msg act "Setting up the Login Screen..."
 sddm_conf_dir=/etc/sddm.conf.d
 [ ! -d "$sddm_conf_dir" ] &&  sudo mkdir -p "$sddm_conf_dir"
 
+sudo mv "$theme" "$theme_dir/"
+echo -e "[Theme]\nCurrent=sequoia-sddm-theme" | sudo tee "$sddm_conf_dir/theme.conf.user" &> /dev/null
 
-sudo tar -xf "$theme" -C "$theme_dir"
-echo -e "[Theme]\nCurrent=minimal_sddm" | sudo tee "$sddm_conf_dir/theme.conf.user" &> /dev/null
-
-if [ -d "$theme_dir/minimal_sddm" ]; then
+if [ -d "$theme_dir/sequoia-sddm-theme" ]; then
     msg dn "Sddm theme was installed successfully!"
 fi
 
