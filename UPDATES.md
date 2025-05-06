@@ -1,5 +1,9 @@
 # Last Modification 👇
 
+## 06 May, 2025:
+
+- Switched to sequoia-sddm-theme (customized for the config)
+
 ## 09 April, 2025:
 
 - Fixed **Final.sh** script. Removed hyprpaper from there.
