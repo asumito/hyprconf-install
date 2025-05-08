@@ -94,6 +94,30 @@ case $browser in
             echo "[ ERROR ] - Could not install Brave" 2>&1 | tee -a "$log" &> /dev/null
         fi
         ;;
+    "Google_Chrome")
+        if command -v "google-chrome-stable" &> /dev/null; then
+            msg skp "Google Chrome is already installed. Skipping"
+            exit 0
+        else
+            install_package google-chrome
+        fi
+        sleep 1
+
+        if [[ -n "$(command -v google-chrome-stable)" ]]; then
+            msg dn "Google Chrome was installed successfully!"
+            echo "[ DONE ] - Google Chrome was installed successfully!" 2>&1 | tee -a "$log" &> /dev/null
+
+            msg att "After completting the installation, please make sure to open the browser and follow the steps.\n" && sleep 2 && echo
+
+            printf "[ 1 ] - Open the browser and in the search bar, typr 'chrome://flags' and press enter\n"
+            printf "[ 2 ] - Now search for 'Ozone platform'\n"
+            printf "[ 3 ] - Choose 'Wayland' from default and restart the browser.\n"
+            sleep 5
+        else 
+            msg err "Could not installed Google Chrome.."
+            echo "[ ERROR ] - Could not install Google Chrome" 2>&1 | tee -a "$log" &> /dev/null
+        fi
+        ;;
     "Chromium")
         if command -v chromium &> /dev/null; then
             msg skp "Chromium is already installed. Skipping"

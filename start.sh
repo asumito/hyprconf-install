@@ -230,7 +230,7 @@ if [[ "$install_browser" =~ ^[Yy]$ ]]; then
             --cursor.foreground "#00FFFF" \
             --item.foreground "#fff" \
             --selected.foreground "#00FF00" \
-            "Brave" "Chromium" "Firefox" "Vivaldi" "Zen Browser" "Skip"
+            "Brave" "Google_Chrome" "Chromium" "Firefox" "Vivaldi" "Zen Browser" "Skip"
         )
         echo "$choice" > "$cache_dir/browser"
 
@@ -240,7 +240,7 @@ if [[ "$install_browser" =~ ^[Yy]$ ]]; then
             --cursor.foreground "#00FFFF" \
             --item.foreground "#fff" \
             --selected.foreground "#00FF00" \
-            "Brave" "Chromium" "Firefox" "Zen Browser" "Skip"
+            "Brave" "Google_Chrome" "Chromium" "Firefox" "Zen Browser" "Skip"
         )
         echo "$choice" > "$cache_dir/browser"
 
@@ -250,7 +250,7 @@ if [[ "$install_browser" =~ ^[Yy]$ ]]; then
             --cursor.foreground "#00FFFF" \
             --item.foreground "#fff" \
             --selected.foreground "#00FF00" \
-            "Brave" "Chromium" "Firefox" "Vivaldi" "Zen Browser" "Skip"
+            "Brave" "Google_Chrome" "Chromium" "Firefox" "Vivaldi" "Zen Browser" "Skip"
         )
         echo "$choice" > "$cache_dir/browser"
     fi
