@@ -93,6 +93,7 @@ case $browser in
             msg err "Could not installed Brave.."
             echo "[ ERROR ] - Could not install Brave" 2>&1 | tee -a "$log" &> /dev/null
         fi
+        ;;
     "Google_Chrome")
         if command -v "google-chrome-stable" &> /dev/null; then
             msg skp "Google Chrome is already installed. Skipping"
