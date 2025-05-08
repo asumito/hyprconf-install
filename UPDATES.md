@@ -1,5 +1,9 @@
 # Last Modification 👇
 
+## 8 May, 2025:
+
+- Added Google Chrome in the browser list
+
 ## 06 May, 2025:
 
 - Switched to sequoia-sddm-theme (customized for the config)
