@@ -190,6 +190,7 @@ if [[ "$pkgman" == "pacman" ]]; then
     else
         touch "$cache_dir/aur"
         msg ask "Which AUR helper would you like to install?"
+        msg att "If you are in a virtual machine, please choose ${cyan}'yay'${end}"
         choice=$(gum choose \
             --cursor.foreground "#00FFFF" \
             --item.foreground "#fff" \
@@ -347,28 +348,7 @@ else
     layout="us"
 fi
 
-gum confirm "Would you like to set a keyboard variant?" \
-    --prompt.foreground "#ff8700" \
-    --affirmative "Sure!" \
-    --selected.background "#00FFFF" \
-    --selected.foreground "#000" \
-    --negative "Skip."
-
-if [ $? -eq 0 ]; then
-    variant=$(localectl \
-        list-x11-keymap-variants \
-        | gum filter \
-        --height 15 \
-        --prompt="<> " \
-        --cursor-text.foreground "#00FFFF" \
-        --indicator.foreground "#00FFFF" \
-        --placeholder "Find keyboard variant..."
-    )
-else
-    variant=""
-fi
-
-msg att "Selected Layout: $layout\n   Selected Variant: ${variant:-None}"
+msg att "Selected Layout: $layout"
 
 # Apply changes to Hyprland config
 if [[ -d "$HOME/.config/hypr/confs" ]]; then        # for hyprconf-v2
@@ -378,7 +358,7 @@ elif [[ -d "$HOME/.config/hypr/configs" ]]; then    # for hyprconf
 fi
 
 sed -i "s/kb_layout = .*/kb_layout = $layout/g" "$kbd_config"
-sed -i "s/kb_variant = .*/kb_variant = $variant/g" "$kbd_config"
+# sed -i "s/kb_variant = .*/kb_variant = $variant/g" "$kbd_config"
 
 echo
 
