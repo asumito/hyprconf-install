@@ -73,6 +73,8 @@ sddm=(
     qt6-qt5compat 
     qt6-qtdeclarative 
     qt6-qtsvg
+    qt6-qtvirtualkeyboard 
+    qt6-qtmultimedia
 )
 
 logins=(
