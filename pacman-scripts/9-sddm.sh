@@ -70,6 +70,8 @@ sddm=(
     qt6-5compat
     qt6-declarative
     qt6-svg
+    qt6-virtualkeyboard 
+    qt6-multimedia-ffmpeg
     sddm
 )
 

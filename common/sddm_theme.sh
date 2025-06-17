@@ -48,14 +48,14 @@ mkdir -p "$log_dir"
 touch "$log"
 
 # Install THEME
-theme="$parent_dir/.cache/sequoia-sddm-theme"
+theme="$parent_dir/.cache/sddm-theme"
 theme_dir=/usr/share/sddm/themes
 
 # creating sddm theme dir
 [ ! -d "$theme_dir" ] && sudo mkdir -p "$theme_dir"
 
 msg act "Clonning sddm theme..."
-git clone --depth=1 https://github.com/shell-ninja/sequoia-sddm-theme.git "$parent_dir/.cache/sequoia-sddm-theme" &> /dev/null
+git clone --depth=1 https://github.com/shell-ninja/sddm-theme.git "$parent_dir/.cache/sddm-theme" &> /dev/null
 
 # Set up SDDM
 msg act "Setting up the Login Screen..."
@@ -63,9 +63,13 @@ sddm_conf_dir=/etc/sddm.conf.d
 [ ! -d "$sddm_conf_dir" ] &&  sudo mkdir -p "$sddm_conf_dir"
 
 sudo mv "$theme" "$theme_dir/"
-echo -e "[Theme]\nCurrent=sequoia-sddm-theme" | sudo tee "$sddm_conf_dir/theme.conf.user" &> /dev/null
 
-if [ -d "$theme_dir/sequoia-sddm-theme" ]; then
+mkdir -p ~/.local/share/fonts/sddm-fonts
+sudo mv /usr/share/sddm/themes/sddm-theme/Fonts/* ~/.local/share/fonts/sddm-fonts/
+echo -e "[Theme]\nCurrent=sddm-theme" | sudo tee "$sddm_conf_dir/theme.conf.user" &> /dev/null
+echo -e "[General]\nInputMethod=qtvirtualkeyboard" | sudo tee "$sddm_conf_dir/virtualkbd.conf" &> /dev/null
+
+if [ -d "$theme_dir/sddm-theme" ]; then
     msg dn "Sddm theme was installed successfully!"
 fi
 
