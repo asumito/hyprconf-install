@@ -93,6 +93,11 @@ case $browser in
             msg skp "Google Chrome is already installed. Skipping"
             exit 0
         else
+            install_package fedora-workstation-repositories
+            sudo dnf config-manager setopt google-chrome.enabled=1 &> /dev/null
+
+            sleep 1
+
             install_package google-chrome-stable
         fi
         sleep 1
