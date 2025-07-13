@@ -69,7 +69,7 @@ _hypr=(
     hyprlock
     hypridle
     hyprcursor
-    hyprpolkitagent
+    # hyprpolkitagent
 )
 
 # checking already installed packages 

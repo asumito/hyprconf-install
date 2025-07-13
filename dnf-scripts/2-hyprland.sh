@@ -68,7 +68,7 @@ _hypr=(
     hypridle
     hyprcursor
     hyprsunset
-    hyprpolkitagent
+    # hyprpolkitagent
     pyprland
 )
 
