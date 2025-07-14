@@ -367,21 +367,13 @@ msg dn "Setting up the keyboard layout was successful.."
 sleep 1 && clear
 
 # ----------------- check if laptop or not
-is_laptop() {
-    if [[ -d "/sys/class/power_supply/BAT0" ]]; then
-        echo "Laptop" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-    else
-        echo "Desktop" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-    fi
-}
-
-# ---------------- setup for a laptop
-system_type=$(is_laptop)
-if [ "$system_type" = "Desktop" ]; then
-    msg nt "This system is a Desktop. Some configuration will be skipped.." 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log") && sleep 2
+if [[ -d "/sys/class/power_supply/BAT0" ]]; then
+    system="laptop"
 else
-    "$common_scripts/laptop.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
+    system="desktop"
 fi
+
+"$common_scripts/${system}.sh" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
 
 sleep 1 && clear
 
