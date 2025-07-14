@@ -65,7 +65,7 @@ fi
 # necessary fonts [ new installable fonts should be added here ]
 fonts=(
     ttf-font-awesome
-    ttf-cascadia-code
+    ttf-cascadia-code-nerd
     ttf-jetbrains-mono-nerd
     ttf-meslo-nerd
     noto-fonts
