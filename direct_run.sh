@@ -93,20 +93,22 @@ gpgkey=https://repo.charm.sh/yum/gpg.key' | sudo tee /etc/yum.repos.d/charm.repo
     fi
 fi
 
-sleep 1
+sleep 1 && clear
  
 [[ ! "$(pwd)" == "$HOME" ]] && cd "$HOME"
 
-printf "${green}=>${end} Preparing the installation scripts...\n\n"
+printf "${green}=>${end} Preparing the installation scripts...\n" && echo
 
 wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -O hyprconf-install.zip && sleep 1
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
-    mkdir hyprconf-install
+    mkdir hyprconf-install &> /dev/null
     unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install &> /dev/null
-    cd hyprconf-install
+    cd hyprconf-install &> /dev/null
     mv hyprconf-install-main/* . && rmdir hyprconf-install-main &> /dev/null
 fi
+
+clear
 
 # git clone --depth=1 https://github.com/me-js-bro/hyprconf-install.git &> /dev/null
 
