@@ -66,8 +66,8 @@ echo
 if [[ -f "$zip_path" ]]; then
     mkdir -p "$target_dir"
     unzip "$zip_path" "SilentSDDM-main/*" -d "$target_dir" > /dev/null
-    mv "$target_dir/SilentSDDM-main/"* "$target_dir" && rmdir "$target_dir/SilentSDDM-main"
-    rm "$zip_path"
+    mv "$target_dir/SilentSDDM-main/"* "$target_dir" && rmdir "$target_dir/SilentSDDM-main" > /dev/null
+    rm "$zip_path" > /dev/null
 fi
 # ---------------------- new ---------------------- #
 
