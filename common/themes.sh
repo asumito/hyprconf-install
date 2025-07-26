@@ -74,8 +74,8 @@ fi
 #     git clone --depth=1 https://github.com/shell-ninja/themes_icons.git "$dir/.cache/themes" &> /dev/null
 # fi
 
-if [[ -d "$dir/.cache/themes_icons" ]]; then
-    cd "$dir/.cache/themes_icons"
+if [[ -d "$parent_dir/.cache/themes_icons" ]]; then
+    cd "$parent_dir/.cache/themes_icons"
     chmod +x extract.sh
     ./extract.sh
 fi

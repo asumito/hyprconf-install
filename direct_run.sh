@@ -23,6 +23,7 @@ packages=(
     git
     gum
     unzip
+    wget
 )
 
 for pkg in "${packages[@]}"; do
@@ -57,7 +58,7 @@ done
 # only for fedora
 if command -v dnf &> /dev/null; then
 
-    for _pkg in git unzip; do
+    for _pkg in git unzip wget; do
 
         if rpm -q $_pkg &> /dev/null; then
             printf "${magenta}[ SKIP ]${end} Skipping $_pkg, it was already installed..\n"

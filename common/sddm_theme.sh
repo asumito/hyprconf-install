@@ -51,11 +51,30 @@ touch "$log"
 theme="$parent_dir/.cache/SilentSDDM"
 theme_dir=/usr/share/sddm/themes
 
+url="https://github.com/shell-ninja/SilentSDDM/archive/refs/heads/main.zip"
+target_dir="$parent_dir/.cache/SilentSDDM"
+zip_path="$target_dir.zip"
+
+# Download the ZIP silently with a progress bar
+msg act "Clonning sddm theme..."
+wget --quiet --show-progress "$url" -O "$zip_path"
+
+echo
+
+# ---------------------- new ---------------------- #
+# Extract only if download succeeded
+if [[ -f "$zip_path" ]]; then
+    mkdir -p "$target_dir"
+    unzip "$zip_path" "SilentSDDM-main/*" -d "$target_dir" > /dev/null
+    mv "$target_dir/SilentSDDM-main/"* "$target_dir" && rmdir "$target_dir/SilentSDDM-main"
+    rm "$zip_path"
+fi
+# ---------------------- new ---------------------- #
+
 # creating sddm theme dir
 [ ! -d "$theme_dir" ] && sudo mkdir -p "$theme_dir"
 
-msg act "Clonning sddm theme..."
-git clone --depth=1 https://github.com/shell-ninja/SilentSDDM.git "$parent_dir/.cache/SilentSDDM" &> /dev/null
+# git clone --depth=1 https://github.com/shell-ninja/SilentSDDM.git "$parent_dir/.cache/SilentSDDM" &> /dev/null
 
 # Set up SDDM
 msg act "Setting up the Login Screen..."
