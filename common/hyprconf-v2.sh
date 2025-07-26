@@ -44,13 +44,34 @@ log="$log_dir/hyprconf-v2-$(date +%d-%m-%y).log"
 mkdir -p "$log_dir"
 touch "$log"
 
+# hyprconf repo url
+url="https://github.com/shell-ninja/hyprconf-v2/archive/refs/heads/main.zip"
+target_dir="$parent_dir/.cache/hyprconf-v2"
+zip_path="$target_dir.zip"
+
 echo
 
-# Clone the repository and log the output
-if [[ ! -d "$parent_dir/.cache/hyprconf-v2" ]]; then
-    msg act "Cloning hyprconf-v2 dotfiles repository..."
-    git clone --depth=1 https://github.com/shell-ninja/hyprconf-v2.git "$parent_dir/.cache/hyprconf-v2" 2>&1 | tee -a "$log" &> /dev/null
+# Download the ZIP silently with a progress bar
+wget --quiet --show-progress "$url" -O "$zip_path"
+
+# ---------------------- new ---------------------- #
+# Extract only if download succeeded
+if [[ -f "$zip_path" ]]; then
+    mkdir -p "$target_dir"
+    unzip "$zip_path" "hyprconf-v2-main/*" -d "$target_dir" > /dev/null
+    mv "$target_dir/hyprconf-v2-main/"* "$target_dir" && rmdir "$target_dir/hyprconf-v2-main"
+    rm "$zip_path"
 fi
+# ---------------------- new ---------------------- #
+
+
+# ---------------------- old ---------------------- #
+# Clone the repository and log the output
+# if [[ ! -d "$parent_dir/.cache/hyprconf-v2" ]]; then
+#     msg act "Cloning hyprconf-v2 dotfiles repository..."
+#     git clone --depth=1 https://github.com/shell-ninja/hyprconf-v2.git "$parent_dir/.cache/hyprconf-v2" 2>&1 | tee -a "$log" &> /dev/null
+# fi
+# ---------------------- old ---------------------- #
 
 sleep 1
 
