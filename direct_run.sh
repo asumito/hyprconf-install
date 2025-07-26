@@ -99,13 +99,13 @@ sleep 1 && clear
 
 printf "${green}=>${end} Preparing the installation scripts...\n" && echo
 
-wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/test.zip -O hyprconf-install.zip && sleep 1
+wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -O hyprconf-install.zip && sleep 1
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
     mkdir hyprconf-install &> /dev/null
-    unzip hyprconf-install.zip 'hyprconf-install-test/*' -d hyprconf-install &> /dev/null
+    unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install &> /dev/null
     cd hyprconf-install &> /dev/null
-    mv hyprconf-install-test/* . && rmdir hyprconf-install-test &> /dev/null
+    mv hyprconf-install-main/* . && rmdir hyprconf-install-main &> /dev/null
 fi
 
 clear
