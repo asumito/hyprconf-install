@@ -97,8 +97,8 @@ sleep 1
  
 [[ ! "$(pwd)" == "$HOME" ]] && cd "$HOME"
 
-printf "${green}=>${end} Preparing the installation scripts...\n"
-echo
+printf "${green}=>${end} Preparing the installation scripts...\n\n"
+
 wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -O hyprconf-install.zip && sleep 1
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
