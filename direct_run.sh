@@ -110,8 +110,6 @@ fi
 
 clear
 
-# git clone --depth=1 https://github.com/me-js-bro/hyprconf-install.git &> /dev/null
-
 if [[ -d "$HOME/hyprconf-install" ]]; then
     printf "${cyan}::${end} Starting the main script..\n" && sleep 1 && clear
 
