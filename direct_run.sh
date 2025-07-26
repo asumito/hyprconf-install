@@ -22,6 +22,7 @@ printf "${orange}=>${end} Starting the script...\n" && sleep 2
 packages=(
     git
     gum
+    unzip
 )
 
 for pkg in "${packages[@]}"; do
@@ -56,16 +57,20 @@ done
 # only for fedora
 if command -v dnf &> /dev/null; then
 
-    if rpm -q git &> /dev/null; then
-        printf "${magenta}[ SKIP ]${end} Skipping git, it was already installed..\n"
-    else
-        printf "${green}=>${end} Installing git...\n"
-        sudo dnf install -y git
-        
-        if rpm -q git; then
-            printf "${cyan}::${end} git was installed successfully!\n"
+    for _pkg in git unzip; do
+
+        if rpm -q $_pkg &> /dev/null; then
+            printf "${magenta}[ SKIP ]${end} Skipping $_pkg, it was already installed..\n"
+        else
+            printf "${green}=>${end} Installing $_pkg...\n"
+            sudo dnf install -y $_pkg
+            
+            if rpm -q $_pkg; then
+                printf "${cyan}::${end} $_pkg was installed successfully!\n"
+            fi
         fi
-    fi
+        
+    done
 
     sleep 1
 
@@ -93,12 +98,21 @@ sleep 1
 [[ ! "$(pwd)" == "$HOME" ]] && cd "$HOME"
 
 printf "${green}=>${end} Preparing the installation scripts...\n"
-git clone --depth=1 https://github.com/me-js-bro/hyprconf-install.git &> /dev/null
+wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -O hyprconf-install.zip && sleep 1
 
-if [[ -d "hyprconf-install" ]]; then
+if [[ -f "$HOME/hyprconf-install.zip" ]]; then
+    mkdir hyprconf-install
+    unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install
+    cd hyprconf-install
+    mv hyprconf-install-main/* . && rmdir hyprconf-install-main
+fi
+
+# git clone --depth=1 https://github.com/me-js-bro/hyprconf-install.git &> /dev/null
+
+if [[ -d "$HOME/hyprconf-install" ]]; then
     printf "${cyan}::${end} Starting the main script..\n" && sleep 1 && clear
 
-    cd hyprconf-install
+    cd "$HOME/hyprconf-install"
     chmod +x start.sh
     ./start.sh
 fi
