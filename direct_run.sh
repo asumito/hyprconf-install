@@ -102,9 +102,9 @@ wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/arc
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
     mkdir hyprconf-install
-    unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install
+    unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install &> /dev/null
     cd hyprconf-install
-    mv hyprconf-install-main/* . && rmdir hyprconf-install-main
+    mv hyprconf-install-main/* . && rmdir hyprconf-install-main &> /dev/null
 fi
 
 # git clone --depth=1 https://github.com/me-js-bro/hyprconf-install.git &> /dev/null
