@@ -109,7 +109,8 @@ other_packages=(
     qt5-quickcontrols2
     ripgrep
     rofi-wayland
-    swappy
+    satty
+    # swappy
     swaync
     swww
     unzip
