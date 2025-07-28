@@ -65,7 +65,7 @@ fi
 
 main_packages=(
   curl
-  eog
+  # eog
   fastfetch
   ffmpeg-free
   git

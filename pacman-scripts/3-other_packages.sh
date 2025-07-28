@@ -70,7 +70,7 @@ other_packages=(
     cliphist
     curl
     # dunst
-    eog
+    # eog
     fastfetch
     ffmpeg
     # gnome-disk-utility
