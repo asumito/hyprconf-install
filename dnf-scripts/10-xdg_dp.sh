@@ -36,7 +36,7 @@ touch "$log"
 
 xdg=(
     xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
+    xdg-desktop-portal-kde
 )
 
 removable=(
