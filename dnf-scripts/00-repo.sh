@@ -68,6 +68,7 @@ copr_repos=(
     lihaohong/yazi
     erikreider/SwayNotificationCenter  
     alternateved/eza
+    jkinred/satty
 )
 
 # enabling 3rd party repo

@@ -90,6 +90,7 @@ main_packages=(
   pavucontrol
   pipewire-alsa
   pipewire-utils
+  pipewire-pulse
   polkit-kde
   power-profiles-daemon
   pulseaudio-utils
@@ -106,7 +107,8 @@ main_packages=(
   rofi-wayland
   slurp
   SwayNotificationCenter
-  swappy
+  # swappy
+  satty
   tar
   unzip
   waybar
