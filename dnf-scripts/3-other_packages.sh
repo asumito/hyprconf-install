@@ -100,7 +100,7 @@ main_packages=(
   python3-pillow
   python3-pyquery
   qt5ct
-  qt6ct
+  qt6ct-kde
   qt6-qtsvg
   ripgrep
   rofi-wayland

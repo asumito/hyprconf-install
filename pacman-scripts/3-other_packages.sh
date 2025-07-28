@@ -101,7 +101,7 @@ other_packages=(
     python-gobject
     qt5ct
     qt5-svg
-    qt6ct
+    qt6ct-kde
     qt6-svg
     qt5-graphicaleffects
     qt5-quickcontrols2
