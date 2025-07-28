@@ -69,15 +69,14 @@ if [[ -f "$zip_path" ]]; then
 fi
 # ---------------------- new ---------------------- #
 
-# if [[ ! -d "$dir/.cache/themes" ]]; then
-#     msg act "Clonning themes repo..."
-#     git clone --depth=1 https://github.com/shell-ninja/themes_icons.git "$dir/.cache/themes" &> /dev/null
-# fi
-
 if [[ -d "$parent_dir/.cache/themes_icons" ]]; then
     cd "$parent_dir/.cache/themes_icons"
     chmod +x extract.sh
     ./extract.sh
+fi
+
+if [[ -d "$HOME/.icons/Bibata-Modern-Ice" ]]; then
+    sudo cp -r "$HOME/.icons"/* /usr/share/icons/ &> /dev/null
 fi
 
 sleep 1 && clear

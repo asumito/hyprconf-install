@@ -73,9 +73,11 @@ other_packages=(
     eog
     fastfetch
     ffmpeg
-    gnome-disk-utility
+    # gnome-disk-utility
+    partitionmanager
     imagemagick
     jq
+    konsole
     kitty
     kvantum
     kvantum-qt5
@@ -95,7 +97,7 @@ other_packages=(
     pavucontrol
     parallel
     pciutils
-    polkit-gnome
+    polkit-kde-agent
     power-profiles-daemon
     python-pywal
     python-gobject
@@ -128,30 +130,26 @@ aur_packages=(
     pyprland
 )
 
-# thunar file manager
-thunar=(
-    ffmpegthumbnailer
-    file-roller
-    gvfs
-    gvfs-mtp
-    thunar
-    thunar-volman
-    tumbler
-    thunar-archive-plugin
+dolphin=(
+    ark
+    crudini
+    dolphin
+    gwenview
+    okular
 )
 
 # checking already installed packages 
-for skipable in "${other_packages[@]}" "${aur_packages[@]}" "${thunar[@]}"; do
+for skipable in "${other_packages[@]}" "${aur_packages[@]}" "${dolphin[@]}"; do
     skip_installed "$skipable"
 done
 
 installble_pkg=($(printf "%s\n" "${other_packages[@]}" | grep -vxFf "$installed_cache"))
 installble_aur_pkg=($(printf "%s\n" "${aur_packages[@]}" | grep -vxFf "$installed_cache"))
-installble_thunar_pkg=($(printf "%s\n" "${thunar[@]}" | grep -vxFf "$installed_cache"))
+installble_dolphin_pkg=($(printf "%s\n" "${dolphin[@]}" | grep -vxFf "$installed_cache"))
 
 printf "\n\n"
 
-for _pkgs in "${installble_pkg[@]}" "${installble_aur_pkg[@]}" "${installble_thunar_pkg[@]}"; do
+for _pkgs in "${installble_pkg[@]}" "${installble_aur_pkg[@]}" "${installble_dolphin_pkg[@]}"; do
     install_package "$_pkgs"
     if sudo pacman -Q "$_pkgs" &>/dev/null; then
         echo "[ DONE ] - $_pkgs was installed successfully!\n" 2>&1 | tee -a "$log" &>/dev/null
