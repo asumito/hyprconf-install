@@ -57,14 +57,12 @@ fi
 checkup=(
     hyprland
     hyprlock
-    # hyprpaper
     hypridle
     hyprcursor
     hyprsunset
     pyprland
     curl
     # dunst
-    eog
     fastfetch
     ffmpeg-free
     git
@@ -87,7 +85,8 @@ checkup=(
     pavucontrol
     pipewire-alsa
     pipewire-utils
-    polkit-gnome
+    pipewire-pulse
+    polkit-kde-agent
     power-profiles-daemon
     pulseaudio-utils
     python3-requests
@@ -97,13 +96,13 @@ checkup=(
     python3-pillow
     python3-pyquery
     qt5ct
-    qt6ct
+    qt6ct-kde
     qt6-qtsvg
     ripgrep
     rofi-wayland
     slurp
     SwayNotificationCenter
-    swappy
+    satty
     tar
     unzip
     waybar
@@ -114,20 +113,17 @@ checkup=(
     btop
     cava
     cliphist
-    gnome-disk-utility 
+    kde-partitionmanager
     mpv
     mpv-mpris
     nwg-look
     pamixer
     swww
-    ffmpegthumbnailer
-    file-roller
-    gvfs
-    gvfs-mtp 
-    Thunar 
-    thunar-volman 
-    tumbler 
-    thunar-archive-plugin
+    ark
+    crudini
+    dolphin
+    gwenview
+    okular
     fontawesome-fonts-all
     google-noto-sans-cjk-fonts
     google-noto-color-emoji-fonts
@@ -140,7 +136,7 @@ checkup=(
     qt6-qtdeclarative 
     qt6-qtsvg
     xdg-desktop-portal-hyprland
-    xdg-desktop-portal-gtk
+    xdg-desktop-portal-kde
 )
 
 

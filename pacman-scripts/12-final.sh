@@ -61,15 +61,10 @@ checkup=(
     cliphist
     curl
     # dunst
-    eog
     fastfetch
     ffmpeg
-    ffmpegthumbnailer
-    file-roller
     grimblast-git
-    gnome-disk-utility
-    gvfs
-    gvfs-mtp
+    partitionmanager
     hyprland
     hyprlock
     # hyprpaper
@@ -95,14 +90,14 @@ checkup=(
     pamixer
     pavucontrol
     pciutils
-    polkit-gnome
+    polkit-kde-agent
     power-profiles-daemon
     python-pywal
     python-gobject
     pyprland
     qt5ct
     qt5-svg
-    qt6ct
+    qt6ct-kde
     qt6-svg
     qt6-5compat
     qt6-declarative
@@ -111,14 +106,16 @@ checkup=(
     qt5-quickcontrols2
     ripgrep
     rofi-wayland
-    swappy
+    # swappy
+    satty
     swaync
     swww
     sddm
-    thunar
-    thunar-volman
-    tumbler
-    thunar-archive-plugin
+    ark
+    crudini
+    dolphin
+    gwenview
+    okular
     tty-clock
     unzip
     waybar
