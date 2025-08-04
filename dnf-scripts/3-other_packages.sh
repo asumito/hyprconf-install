@@ -91,7 +91,6 @@ main_packages=(
   pipewire-alsa
   pipewire-utils
   pipewire-pulse
-  polkit-kde
   power-profiles-daemon
   pulseaudio-utils
   python3-requests
@@ -115,6 +114,7 @@ main_packages=(
   wget2
   wl-clipboard
   xdg-utils
+	 xfce-polkit
   yazi
 )
 
