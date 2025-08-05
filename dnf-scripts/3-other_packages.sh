@@ -65,7 +65,6 @@ fi
 
 main_packages=(
   curl
-  # eog
   fastfetch
   ffmpeg-free
   git
@@ -106,7 +105,6 @@ main_packages=(
   rofi-wayland
   slurp
   SwayNotificationCenter
-  # swappy
   satty
   tar
   unzip
@@ -114,7 +112,7 @@ main_packages=(
   wget2
   wl-clipboard
   xdg-utils
-	 xfce-polkit
+	xfce-polkit
   yazi
 )
 
