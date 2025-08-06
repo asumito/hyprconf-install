@@ -86,7 +86,7 @@ checkup=(
     pipewire-alsa
     pipewire-utils
     pipewire-pulse
-    polkit-kde-agent
+    # polkit-kde-agent
     power-profiles-daemon
     pulseaudio-utils
     python3-requests
@@ -135,6 +135,7 @@ checkup=(
     qt6-qt5compat 
     qt6-qtdeclarative 
     qt6-qtsvg
+    xfce-polkit
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-kde
 )
