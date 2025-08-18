@@ -86,6 +86,7 @@ other_packages=(
     mpv-mpris
     network-manager-applet
     networkmanager
+    neovim
     nodejs
     npm
     ntfs-3g
