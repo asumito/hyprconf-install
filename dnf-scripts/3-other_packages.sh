@@ -81,6 +81,8 @@ main_packages=(
     make
     network-manager-applet
     NetworkManager-tui
+    nodejs
+    nodejs-npm
     neovim
     nvtop
     pamixer
