@@ -57,7 +57,7 @@ zip_path="$target_dir.zip"
 
 # Download the ZIP silently with a progress bar
 msg act "Clonning sddm theme..."
-wget --quiet --show-progress "$url" -O "$zip_path"
+curl -L "$url" -o "$zip_path"
 
 echo
 

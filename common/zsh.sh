@@ -55,10 +55,20 @@ if [ -d ~/.zsh ]; then
     msg dn "Successfully backed up .zsh"
 fi
 
-# now install bash
+# now install zsh
 
-if [[ ! -d "$parent_dir/.cache/Zsh" ]]; then
-    git clone --depth=1 https://github.com/me-js-bro/Zsh.git "$parent_dir/.cache/Zsh" 2>&1 | tee -a "$log" && sleep 1 &> /dev/null
+url="https://github.com/shell-ninja/Zsh/archive/refs/heads/main.zip"
+target_dir="$parent_dir/.cache/Zsh"
+zip_path="$target_dir.zip"
+
+# Download the ZIP silently with a progress bar
+curl -L "$url" -o "$zip_path"
+
+if [[ -f "$zip_path" ]]; then
+    mkdir -p "$target_dir"
+    unzip "$zip_path" "Zsh-main/*" -d "$target_dir" > /dev/null
+    mv "$target_dir/Zsh-main/"* "$target_dir" && rmdir "$target_dir/Zsh-main"
+    rm "$zip_path"
 fi
 
 if [[ -d "$parent_dir/.cache/Zsh" ]]; then
@@ -67,7 +77,7 @@ if [[ -d "$parent_dir/.cache/Zsh" ]]; then
     ./install.sh 2>&1 | tee -a "$log"
     exit 0
 else
-    msg err "Could not fine $pare nt_dir/.cache/Zsh. exiting.."
+    msg err "Could not fined $parent_dir/.cache/Zsh. exiting.."
     exit 1
 fi
 

@@ -100,7 +100,7 @@ sleep 1 && clear
 
 printf "${green}=>${end} Preparing the installation scripts...\n" && echo
 
-wget --quiet --show-progress https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -O hyprconf-install.zip && sleep 1
+curl https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -o hyprconf-install.zip && sleep 1
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
     mkdir hyprconf-install &> /dev/null

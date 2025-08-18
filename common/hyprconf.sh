@@ -52,7 +52,7 @@ zip_path="$target_dir.zip"
 echo
 
 # Download the ZIP silently with a progress bar
-wget --quiet --show-progress "$url" -O "$zip_path"
+curl -L "$url" -o "$zip_path"
 
 # ---------------------- new ---------------------- #
 # Extract only if download succeeded
