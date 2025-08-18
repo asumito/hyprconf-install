@@ -326,7 +326,8 @@ sleep 1 && clear
 
 
 # setting up the keyboard leyout
-msg att "By default, the keyboard layout will be 'us'"
+keyboardLayout=$(localectl status | grep "Keymap" | awk '{print $3}')
+msg att "Your current keyboard layout is set to '$keyboardLayout'"
 gum confirm "Is it ok for you?" \
     --prompt.foreground "#ff8700" \
     --affirmative "Yes! Set" \
@@ -345,7 +346,7 @@ if [ $? -eq 1 ]; then
         --placeholder "Search keyboard layout..."
     )
 else
-    layout="us"
+    layout="$keyboardLayout"
 fi
 
 msg att "Selected Layout: $layout"

@@ -55,7 +55,7 @@ target_dir="$parent_dir/.cache/themes_icons"
 zip_path="$target_dir.zip"
 
 # Download the ZIP silently with a progress bar
-wget --quiet --show-progress "$url" -O "$zip_path"
+curl -L "$url" -o "$zip_path"
 
 echo
 
