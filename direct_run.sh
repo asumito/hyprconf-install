@@ -100,13 +100,14 @@ sleep 1 && clear
 
 printf "${green}=>${end} Preparing the installation scripts...\n" && echo
 
-curl https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -o hyprconf-install.zip && sleep 1
+curl -L https://github.com/shell-ninja/hyprconf-install/archive/refs/heads/main.zip -o hyprconf-install.zip && sleep 1
 
 if [[ -f "$HOME/hyprconf-install.zip" ]]; then
     mkdir hyprconf-install &> /dev/null
     unzip hyprconf-install.zip 'hyprconf-install-main/*' -d hyprconf-install &> /dev/null
     cd hyprconf-install &> /dev/null
     mv hyprconf-install-main/* . && rmdir hyprconf-install-main &> /dev/null
+    rm "$HOME/hyprconf-install.zip"
 fi
 
 clear
