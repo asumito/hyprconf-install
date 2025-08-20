@@ -130,6 +130,7 @@ aur_packages=(
     hyprland-qtutils
     tty-clock
     pyprland
+    wlogout
 )
 
 dolphin=(

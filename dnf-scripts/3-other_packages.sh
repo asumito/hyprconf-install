@@ -129,6 +129,7 @@ other_packages=(
     nwg-look
     pamixer
     swww
+    wlogout
 )
 
 dolphin=(
