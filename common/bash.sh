@@ -54,6 +54,6 @@ if [ -d ~/.bash ]; then
 fi
 
 # now install bash
-bash <(curl https://raw.githubusercontent.com/me-js-bro/Bash/main/direct_install.sh) 2>&1 | tee -a "$log"
+bash <(curl https://raw.githubusercontent.com/shell-ninja/Bash/main/direct_install.sh) 2>&1 | tee -a "$log"
 
 clear
