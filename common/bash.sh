@@ -54,29 +54,6 @@ if [ -d ~/.bash ]; then
 fi
 
 # now install bash
-
-url="https://github.com/shell-ninja/Bash/archive/refs/heads/main.zip"
-target_dir="$parent_dir/.cache/Bash"
-zip_path="$target_dir.zip"
-
-# Download the ZIP silently with a progress bar
-curl -L "$url" -o "$zip_path"
-
-if [[ -f "$zip_path" ]]; then
-    mkdir -p "$target_dir"
-    unzip "$zip_path" "Bash-main/*" -d "$target_dir" > /dev/null
-    mv "$target_dir/Bash-main/"* "$target_dir" && rmdir "$target_dir/Bash-main"
-    rm "$zip_path"
-fi
-
-if [[ -d "$parent_dir/.cache/Bash" ]]; then
-    cd "$parent_dir/.cache/Bash" || msg err "Could not cd into $parent_dir/.cache/Bash" 2>&1 | tee -a >(sed 's/\x1B\[[0-9;]*[JKmsu]//g' >> "$log")
-    chmod +x install.sh 2>&1 | tee -a "$log"
-    ./install.sh 2>&1 | tee -a "$log"
-    exit 0
-else
-    msg err "Could not fined $parent_dir/.cache/Bash. exiting.."
-    exit 1
-fi
+bash <(curl https://raw.githubusercontent.com/me-js-bro/Bash/main/direct_install.sh) 2>&1 | tee -a "$log"
 
 clear
