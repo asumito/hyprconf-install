@@ -41,19 +41,6 @@ source "$parent_dir/interaction_fn.sh"
 log_dir="$parent_dir/Logs"
 log="$log_dir/aur_helper-$(date +%d-%m-%y).log"
 
-# checking if the script already ran
-if [[ -f "$log" ]]; then
-    error=$(grep "ERROR" "$log")
-    if [[ -z "$error" ]]; then
-        msg skp "This script was executed before. Skiping."
-        sleep 2
-        exit 0
-    fi
-else
-    mkdir -p "$log_dir"
-    touch "$log"
-fi
-
 # Check for existing AUR helpers
 aur_helper=$(command -v yay || command -v paru)
 
